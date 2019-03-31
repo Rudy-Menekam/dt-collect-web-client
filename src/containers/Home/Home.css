@@ -9,7 +9,7 @@
 h1{
     color: #fff;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
 }
 .login-content{
@@ -27,5 +27,21 @@ h1{
 }
 
 .copy-right{
-    color: #fff;
+    color: hsl(0, 0%, 41%);
+    text-align: center;
 }
+@media screen and (max-width: 800px) {
+    .home-page, .main-page, .login-content {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .login-content > h1{
+        font-size:20px;
+        text-align: center;
+        word-wrap: break-word;
+        padding-right: 20%;
+    }
+    #val{
+        display: none;
+    }
+   
+  }
